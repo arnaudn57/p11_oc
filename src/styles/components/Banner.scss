@@ -1,0 +1,17 @@
+.banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    border-radius: 25px;
+
+    &__content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $secondary-color;
+        font-family: $primary-font;
+        font-size: 24px;
+    }
+}
