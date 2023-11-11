@@ -1,0 +1,10 @@
+@import './mixins.scss';
+@import './variables.scss';
+@import './components/Navbar.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0 25px;
+    padding: 0;
+
+}

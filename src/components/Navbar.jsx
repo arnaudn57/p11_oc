@@ -1,12 +1,13 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import KasaLogo from '../assets/kasa-logo.svg';
 
 export default function Navbar() {
   return (
-    <>
+    <div>
         <header>
             <div className="logo">
-                <img src="../assets/kasa-logo.svg" alt="Kasa Logo"></img>
+                <img src={KasaLogo} alt="Kasa Logo"></img>
             </div>
             <div className="menu">
                 <ul>
@@ -15,6 +16,6 @@ export default function Navbar() {
                 </ul>
             </div>
         </header>
-    </>
+    </div>
   )
 }
