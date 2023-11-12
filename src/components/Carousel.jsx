@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import ArrowLeft from '../assets/carousel-arrow-left.svg';
+import ArrowRight from '../assets/carousel-arrow-right.svg';
 
 export default function Carousel(props) {
     const [flatPictures, setFlatPictures] = useState([]);
@@ -29,8 +31,14 @@ export default function Carousel(props) {
             <div className="carousel-inner">
                 <img src={flatPictures[currentPicture]} alt={`Slide ${currentPicture}`} />
             </div>
-            <button onClick={previousPicture} className="carousel-arrow carousel-arrow-left">&#9665;</button>
-            <button onClick={nextPicture} className="carousel-arrow carousel-arrow-right">&#9655;</button>
+            {flatPictures.length > 1 && (
+                <>
+                    <span className="carousel-counter">{currentPicture + 1} / {flatPictures.length}</span>
+                    <img onClick={previousPicture} src={ArrowLeft} className="carousel-arrow carousel-arrow-left" />
+                    <img onClick={nextPicture} src={ArrowRight} className="carousel-arrow carousel-arrow-right" />
+                </>
+            )}
+
         </div>
     );
 }

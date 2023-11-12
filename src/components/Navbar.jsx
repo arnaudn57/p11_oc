@@ -7,7 +7,9 @@ export default function Navbar() {
     <>
         <header>
             <div className="logo">
-                <img src={KasaLogo} alt="Kasa Logo"></img>
+                <Link to="/">
+                    <img src={KasaLogo} alt="Kasa Logo"></img>
+                </Link>
             </div>
             <div className="menu">
                 <ul>
