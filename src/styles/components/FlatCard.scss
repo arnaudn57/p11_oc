@@ -1,11 +1,13 @@
 
 .flat-card {
+    position: relative;
+    margin: 0 auto;
     height: 340px;
-    background-color: #fff;
-    border-radius: 4px;
+    width: 340px;
+    background-position: center;
+    border-radius: 10px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 16px;
-    margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,6 +17,15 @@
     cursor: pointer;
     &:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        font-size: 18px;
+        font-family: $primary-font;
+        color: $secondary-color;
+        text-align: left;
     }
 
 }

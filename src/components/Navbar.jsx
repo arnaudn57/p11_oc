@@ -4,7 +4,7 @@ import KasaLogo from '../assets/kasa-logo.svg';
 
 export default function Navbar() {
   return (
-    <div>
+    <>
         <header>
             <div className="logo">
                 <img src={KasaLogo} alt="Kasa Logo"></img>
@@ -16,6 +16,6 @@ export default function Navbar() {
                 </ul>
             </div>
         </header>
-    </div>
+    </>
   )
 }
