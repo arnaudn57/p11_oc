@@ -1,0 +1,12 @@
+.tag {
+    background-color: $primary-color;
+    color: white;
+    padding: 0 10px;
+    width: fit-content;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: $primary-font;
+    display: flex;
+    align-items: center;
+}
