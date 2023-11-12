@@ -1,0 +1,40 @@
+.collapse {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .collapse-title {
+        border-radius: 10px;
+        background-color: $primary-color;
+        color: white;
+        font-size: 18px;
+        font-family: $primary-font;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .collapse-content {
+        background-color: #F6F6F6;
+        color: $primary-color;
+        font-size: 16px;
+        font-family: $primary-font;
+        padding: 0 20px;
+
+        .collapse-content-items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+}

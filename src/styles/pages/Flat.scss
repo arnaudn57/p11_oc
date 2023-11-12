@@ -1,7 +1,32 @@
+.flat-details {
+    .flat-title {
+        font-size: 36px;
+        font-family: $primary-font;
+        color: $primary-color;
+        font-family: $primary-font;
+        font-weight: 500;
+    }
+
+    .flat-location {
+        font-size: 18px;
+        font-family: $primary-font;
+        color: $primary-color;
+        font-family: $primary-font;
+        font-weight: 500;
+    }
+}
+
 .tag-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.collapse-container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
 }

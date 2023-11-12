@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Carousel from '../components/Carousel';
 import Tag from '../components/Tag';
+import Collapse from '../components/Collapse';
 
 export default function Flat() {
     const [flat, setFlat] = useState(null);
@@ -38,17 +39,22 @@ export default function Flat() {
                     <p>Loading...</p>
                 )}
             </div>
-            <div className="flat-details">
-                <h1>{flat.title}</h1>
-                <p>{flat.location}</p>
-                <div className="tag-container">
-                    {flat.tags.map((tag) => (
-                        <Tag tagTitle={tag} key={tag.id}/>
-                    ))}
+            {flat && (
+                <div className="flat-details">
+                    <h1 className="flat-title">{flat.title}</h1>
+                    <p className="flat-location">{flat.location}</p>
+                    <div className="tag-container">
+                        {flat.tags.map((tag, index) => (
+                            <Tag tagTitle={tag} key={tag.id || index} />
+                        ))}
+                    </div>
+                    <div className="collapse-container">
+                        <Collapse title="Description" items={[flat.description]}/>
+                        <Collapse title="Équipements" items={flat.equipments}/>
+                    </div>
+                    <p>{flat.price}</p>
                 </div>
-                <p>{flat.description}</p>
-                <p>{flat.price}</p>
-            </div>
+            )}
         </>
     );
 }
