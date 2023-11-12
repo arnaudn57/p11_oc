@@ -25,7 +25,6 @@ export default function Flat() {
 
     return (
         <div>
-            <h1>Flat</h1>
             {dataFetched ? (
                 flat ? (
                     <Carousel flatPictures={flat.pictures} />

@@ -25,16 +25,12 @@ export default function Carousel(props) {
     }
 
     return (
-        <>
-            <div className="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item">
-                        <img src={flatPictures[currentPicture]} alt={`Slide ${currentPicture}`} />
-                    </div>
-                </div>
-                <button onClick={previousPicture} className="carousel-arrow carousel-arrow-left">&#9665;</button>
-                <button onClick={nextPicture} className="carousel-arrow carousel-arrow-right">&#9655;</button>
+        <div className="carousel">
+            <div className="carousel-inner">
+                <img src={flatPictures[currentPicture]} alt={`Slide ${currentPicture}`} />
             </div>
-        </>
+            <button onClick={previousPicture} className="carousel-arrow carousel-arrow-left">&#9665;</button>
+            <button onClick={nextPicture} className="carousel-arrow carousel-arrow-right">&#9655;</button>
+        </div>
     );
 }
