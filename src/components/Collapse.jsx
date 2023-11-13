@@ -10,13 +10,12 @@ export default function Collapse(props) {
   const arrowClass = isOpened ? 'rotate-180' : '';
   return (
     <>
-      <div className="collapse">
+      <div className="collapse" onClick={toggle}>
         <div className="collapse-title">
           <h2>{title}</h2>
           <img
             src={ArrowBack}
             className={arrowClass}
-            onClick={toggle}
             alt="Arrow"
           />
         </div>
