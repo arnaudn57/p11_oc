@@ -24,12 +24,14 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 24px;
         cursor: pointer;
         padding: 10px;
         border: none;
         outline: none;
         user-select: none;
+        @media (max-width: $mobile) {
+            width: 5%;
+        }
     }
 
     .carousel-arrow-left {
@@ -49,5 +51,9 @@
         border-radius: 10px;
         font-size: 18px;
         font-family: $primary-font;
+        @media (max-width: $mobile) {
+            left: 45%;
+            padding: 0;
+        }
     }
 }
