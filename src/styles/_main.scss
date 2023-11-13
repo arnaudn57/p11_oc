@@ -15,8 +15,13 @@
 @import './pages/Flat.scss';
 @import './pages/Error.scss';
 
-main, header {
+
+main {
     width: 80%;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }

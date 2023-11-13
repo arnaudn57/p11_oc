@@ -1,4 +1,7 @@
 .flat-details {
+    display: flex;
+    justify-content: space-between;
+
     .flat-title {
         font-size: 36px;
         font-family: $primary-font;
@@ -13,6 +16,46 @@
         color: $primary-color;
         font-family: $primary-font;
         font-weight: 500;
+    }
+
+    .flat-details-right {
+        .host {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 10px;
+            height: 64px;
+            .host-picture {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+
+            .host-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: $primary-color;
+                font-family: $primary-font;
+                font-size: 18px;
+            }
+        }
+        .rating {
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            font-family: $primary-font;
+            margin-top: 30px;
+            .rating-icon-filled {
+                color: $primary-color;
+            }
+
+            .rating-icon-empty {
+                color: #E3E3E3;
+            }
+
+        }
     }
 }
 
