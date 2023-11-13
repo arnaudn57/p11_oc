@@ -13,6 +13,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0 20px;
+        z-index: 99;
         @media (max-width: $mobile) {
             font-size: 12px;
         }
@@ -24,6 +25,8 @@
         font-size: 16px;
         font-family: $primary-font;
         padding: 0 20px;
+        animation: growAndDescend 0.5s ease-out;
+        overflow: hidden;
 
         .collapse-content-items {
             display: flex;
@@ -40,5 +43,23 @@
 
 .rotate-180 {
     transform: rotate(180deg);
-    transition: transform 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+    transition: transform 0.3s ease;
+}
+
+.rotate-0 {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+@keyframes growAndDescend {
+  from {
+    height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

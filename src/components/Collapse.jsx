@@ -7,7 +7,7 @@ export default function Collapse(props) {
 
   const toggle = () => setIsOpened((wasOpened) => !wasOpened);
 
-  const arrowClass = isOpened ? 'rotate-180' : '';
+  const arrowClass = isOpened ? 'rotate-180' : 'rotate-0';
   return (
     <>
       <div className="collapse" onClick={toggle}>
