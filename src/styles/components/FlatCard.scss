@@ -1,9 +1,19 @@
 
 .flat-card {
+
+    @media screen and (min-width: $desktop) {
+        & {
+           width: 340px;
+        }
+    }
+    @media screen and (max-width: $mobile) {
+        & {
+           height: 255px;
+        }
+    }
     position: relative;
     margin: 0 auto;
     height: 340px;
-    width: 340px;
     background-position: center;
     border-radius: 10px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -15,6 +25,7 @@
     text-align: center;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+
     &:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }

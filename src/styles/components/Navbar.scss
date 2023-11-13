@@ -10,8 +10,24 @@ header {
     box-sizing: border-box;
     // margin: 0 25px;
     padding: 30px 0;
+
+    //Mobile
+    @media screen and (max-width: $mobile) {
+        & {
+            width: 90%;
+            font-size:12px
+        }
+    }
 }
 
+.logo {
+    //Mobile
+    @media screen and (max-width: $mobile) {
+        img {
+            width: 100px;
+        }
+    }
+}
 .menu {
     display: flex;
     align-items: center;

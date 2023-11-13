@@ -10,7 +10,7 @@ export default function Footer() {
                     <img src={KasaLogo} alt="logo" />
                 </div>
                 <div className="footer-copyright">
-                    <p>&copy; 2020 Kasa. All rights reserved.</p>
+                    <p>&copy; 2020 Kasa. All rights reserved</p>
                 </div>
             </div>
         </footer>

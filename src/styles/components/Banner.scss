@@ -4,6 +4,13 @@
     background-repeat: no-repeat;
     height: 350px;
     border-radius: 25px;
+    //Mobile
+    @media (max-width: $mobile) {
+        & {
+            border-radius: 10px;
+            height: 111px;
+        }
+    }
 
     &__content {
         height: 100%;
@@ -13,5 +20,15 @@
         color: $secondary-color;
         font-family: $primary-font;
         font-size: 24px;
+        //Mobile
+        @media (max-width: $mobile) {
+            & {
+                width: 62%;
+                padding-left: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
     }
 }
