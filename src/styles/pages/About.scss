@@ -5,4 +5,8 @@
     flex-direction: column;
     margin: 0 auto;
     gap: 50px;
+    @media (max-width: $mobile) {
+        width: 100%;
+        gap: 12px;
+    }
 }
