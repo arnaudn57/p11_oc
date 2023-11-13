@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Banner(props) {
-    const { backgroundImageName } = props;
+    const { backgroundImageName, text } = props;
     const background_image = `../../../public/${backgroundImageName}`;
 
     return (
@@ -10,7 +10,7 @@ export default function Banner(props) {
                                 rgba(0, 0, 0, 0.5)), url(${background_image})`
         }}>
             <div className="banner__content">
-                <h1>Chez vous, partout et ailleurs</h1>
+                <h1>{text}</h1>
             </div>
         </div>
     );

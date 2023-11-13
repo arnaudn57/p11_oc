@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Banner from '../components/Banner';
-import FlatCard from '../components/FlatCard';
 import FlatsGrid from '../components/FlatsGrid';
 
 
@@ -18,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-        <Banner backgroundImageName='home-banner.png'/>
+        <Banner backgroundImageName='home-banner.png' text='Chez vous, partout et ailleurs'/>
         <FlatsGrid flats={flats}/>
     </>
   )
